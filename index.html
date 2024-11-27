@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WzrBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu_titulo">Categorias</li>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Aventura</a>
+        </li>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Comédia</a>
+        </li>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Ficção</a>
+        </li>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Romance</a>
+        </li>
+        <li class="lista-menu_item">
+          <a href="#" class="lista-menu_link">Suspense</a>
+        </li>
+      </ul>
+      <img src="img/Logo.png" alt="Logo do WzrBooks" width="80" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.png" alt="Meus Favoritos" width="30" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.png" alt="Carrinho de Compras" width="30" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuário.png" alt="Meu Perfil" width="30" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Precisa de uma inspiração?</h2>
+    <p class="banner__texto">Encontre na minha biblioteca algo para seu entreterimento!
+    <p>
+      <input type="search" class="banner__pesquisa" placeholder="No que estaria interessado(a)?">
+  </section>
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Já Lidos!</h2>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper">
+
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/SoloLeveling.png" alt="Light Novel de Solo Leveling"></div>
+        <div class="swiper-slide"><img src="img/OrdemParanormal.png" alt="Hq de Ordem Paranormal"></div>
+        <div class="swiper-slide"><img src="img/PaísDasMaravilhas.png" alt="Livro de Alice no País das Maravilhas">
+        </div>
+        <div class="swiper-slide"><img src="img/HarryPotter.png" alt="Livro de Harry Potter e a Pedra Filosofal"></div>
+        <div class="swiper-slide"><img src="img/WindBreaker.png" alt="Manhwa de Wind Breaker"></div>
+        <div class="swiper-slide"><img src="img/ArteDaGuerra.png" alt="Livro de A Arte da Guerra"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1° linha -->
+      <div class="card__descrição">
+        <!-- 1° coluna -->
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você goste de...</h3>
+          <h2 class="descrição__titulo-livro">A casa na árvore com 13,26,39... andares</h2>
+          <p class="descrição__texto">Veja dois irmãos contruindo uma casa na árvore com 13 até mais de 100 andares!</p>
+        </div>
+        <!-- 2°coluna -->
+        <img src="img/CasanaArvore.png" class="descrição__imagem" width="100">
+      </div>
+
+      <!-- 2° linha -->
+      <div class="card__botões">
+        <!-- 1° Coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.png" alt="Favoritar livro" width="30"></li>
+          <li class="botões__item"><img src="img/Compras.png" alt="Adicionar ao carrinho de compras" width="30"></li>
+        </ul>
+        <!-- 2° coluna -->
+        <a href="#" class="botões__ancora">Saiba Mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Fantasia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">RPG</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Aventura</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Thriller</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ação</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suspense</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Estratégia</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Que tal receber novas recomendações!</h2>
+    <p class="contato__texto">Atualizações trimestrais de livros, Hq's, manhwa's, em ascensão e outros.</p>
+    <input type="email" placeholder="Cadastre seu email" class="contato__email">
+  </section>
+
+  <hr/>
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Waizr</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrossel.css);
+@import url(styles/topicos.css);
+@import url(styles/contato.css);
+@import url(styles/rodape.css);
+
+:root {
+    --pessego-claro: #fff0ed;
+    --vinho-profundo: #4b2138;
+    --vinho-acinzentado: #4c3a44;
+    --branco: #ffffff;
+    --pêssego: #ffd58c;
+    --cor-fonte-destaque: #f8ffff;
+    --cor-fonte-degrade: linear-gradient(97.54deg, #f8f8ff 35.49%, #787878 165.37%);
+    --cor-fundo-degrade: linear-gradient(97.54deg, #4a0730 35.49%, #7a0c31 165.37%);
+    --fonte-principal: "Quicksand";
+    --cor-destaque-carrosel: #350056;
+    --cor-destaque-carrosel2: #6f00b5;
+}
+
+body {
+    background-color: var(--pessego-claro);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+}
